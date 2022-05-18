@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <center><h1>Multimedia and Media Source in HTML</h1></center>
+    <link href = "style.css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <p>Today's date : </p>
+        <p id="thisisdate"></p>
+            </br>
+<ul>
+    <li>
+        <hr>
+        <h2>Video</h2>
+        <hr>
+        <center>
+        <Video controls width="1000" height="500" loop autoplay muted preload="auto">
+            <source src="video1.mp4" type="video/mp4" alt="source : Puuung on Youtube">
+            <p>Unsupported Browser! Please use the <a href="video1.mp4">link</a> here</p>
+            <track kind="captions" src="video1.mp4" srclang="en" label="English">
+        </Video>
+    </br></br>
+        <fligcaption>source : Puuung on Youtube</fligcaption>
+        </center>
+    </li>
+    <li>
+        <hr>
+        <h2>Audio</h2>
+        <hr>
+        <center>
+        <audio controls>
+            <source src="audio1.webm" type="audio/webm">
+            <p>Unsupported Browser! Please use the <a href="audio1.webm">link</a> here</p>
+        </audio>
+    </br></br>
+        <fligcaption>AKMU - How can I love the heartbreak, you're the one I love</fligcaption>
+        </center>
+    </li>
+    <li>
+        <hr>
+        <h2>Responsive Picture</h2>
+        <hr>
+        <center>
+        <picture>
+            <source media="(max-width:1200px)" srcset="picture1.png">
+            <source media="(max-width:2400px)" srcset="picture2.png">
+            <img src="picture1.png" alt="picture 1" style="width: auto;">
+        </br></br>
+            <fligcaption>source : Puuung</fligcaption>
+        </picture>
+        </center>
+    </li>
+</ul>
+<script src="javascript.js"></script>
+</html>
